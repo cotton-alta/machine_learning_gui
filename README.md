@@ -1,0 +1,2 @@
+# machine_learning_gui
+GUI上でMLPなどのモデルを作成するツール
