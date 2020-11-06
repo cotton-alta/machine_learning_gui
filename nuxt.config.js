@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
 
@@ -38,10 +38,17 @@ export default {
     '@nuxtjs/axios'
   ],
 
+  router: {
+    mode: "hash"
+  },
+
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    extend(config, ctx) {
+      config.output.publicPath = "./_nuxt/";
+    }
   }
 }

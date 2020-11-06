@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
       <h1 class="title">
         machine_learning_gui
       </h1>
